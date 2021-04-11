@@ -1,0 +1,23 @@
+@import './theme/handle.scss';
+
+html,body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+body{
+  @include backgroundColor('background_color');
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.text{
+  font-size: 30px;
+  @include color('font_color');
+}
